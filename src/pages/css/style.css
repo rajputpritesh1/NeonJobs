@@ -1,0 +1,160 @@
+/* Google Font */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* GitHub Dark Theme Colors */
+:root {
+    --github-dark-bg: #0d1117;
+    --github-dark-card: #161b22;
+    --github-dark-footer: #010409;
+    --github-border: #30363d;
+    --github-text: #c9d1d9;
+    --github-text-secondary: #8b949e;
+    --github-primary: #58a6ff;
+    --github-primary-hover: #79b8ff;
+    --github-secondary: #6e7681;
+    --github-link: #58a6ff;
+    --github-input-bg: #0d1117;
+    --github-input-border: #30363d;
+}
+
+/* Base Styles */
+.github-dark {
+    background-color: var(--github-dark-bg);
+    color: var(--github-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.bg-github-dark {
+    background-color: var(--github-dark-card) !important;
+    border-bottom: 1px solid var(--github-border);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--github-text) !important;
+}
+
+.nav-link {
+    color: var(--github-text-secondary) !important;
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: var(--github-text) !important;
+    font-weight: 600;
+}
+
+/* Cards */
+.bg-github-dark-card {
+    background-color: var(--github-dark-card);
+    border: 1px solid var(--github-border);
+    border-radius: 6px;
+    color: var(--github-text);
+}
+
+/* Buttons */
+.btn-github-primary {
+    background-color: var(--github-primary);
+    color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-github-primary:hover {
+    background-color: var(--github-primary-hover);
+    color: #fff;
+}
+
+.btn-outline-github-secondary {
+    color: var(--github-text);
+    border-color: var(--github-border);
+    font-weight: 500;
+}
+
+.btn-outline-github-secondary:hover {
+    background-color: var(--github-secondary);
+    border-color: var(--github-secondary);
+    color: #fff;
+}
+
+/* Text Colors */
+.text-github-link {
+    color: var(--github-link) !important;
+    text-decoration: none;
+}
+
+.text-github-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.bg-github-dark-footer {
+    background-color: var(--github-dark-footer) !important;
+    border-top: 1px solid var(--github-border);
+    margin-top: auto;
+    background: transparent;
+}
+
+/* Form Controls */
+.bg-github-input {
+    background-color: var(--github-input-bg) !important;
+    border-color: var(--github-input-border) !important;
+    color: var(--github-text) !important;
+}
+
+.bg-github-input:focus {
+    background-color: var(--github-input-bg);
+    border-color: var(--github-primary);
+    color: var(--github-text);
+    box-shadow: 0 0 0 0.25rem rgba(88, 166, 255, 0.25);
+}
+
+/* 404 Page Styles */
+.error-container {
+    background-color: var(--github-dark-card);
+    border: 1px solid var(--github-border);
+    border-radius: 6px;
+}
+
+.error-icon {
+    color: #f85149;
+    font-size: 3rem;
+}
+
+/* Contact Page Styles */
+.contact-info {
+    background-color: var(--github-dark-card);
+    border: 1px solid var(--github-border);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact-info:hover {
+    border-color: var(--github-primary);
+}
+
+/* Feature Icons */
+.feature-icon {
+    color: var(--github-primary);
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.2rem;
+    transition: color 0.2s ease;
+}
+
+.social-icons a:hover {
+    color: var(--github-primary) !important;
+}
+
+/* Utility Classes */
+.bg-github-border {
+    background-color: var(--github-border) !important;
+    opacity: 1;
+}
