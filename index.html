@@ -1,1 +1,378 @@
-git push -u origin main
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonJobs - Futuristic Job Portal</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Futuristic -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand neon-text" href="#">
+                <i class="fas fa-bolt me-2"></i>NeonJobs
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jobs">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#companies">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="ms-lg-3 mt-3 mt-lg-0">
+                    <a href="#signup" class="btn btn-neon btn-sm">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section mt-5">
+        <!-- Animated background elements -->
+        <div class="hero-bg-element" style="top: -200px; right: -200px;"></div>
+        <div class="hero-bg-element" style="bottom: -300px; left: -300px; background: radial-gradient(circle, rgba(255, 42, 109, 0.1) 0%, transparent 70%);"></div>
+        
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-3 fw-bold mb-4 neon-text">Find Your <span class="neon-secondary">Dream Job</span> in Tech</h1>
+                    <p class="lead mb-5">Join thousands of developers, designers and tech professionals who found their perfect match through our AI-powered job matching platform.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#search" class="btn btn-neon px-4 py-3">
+                            <i class="fas fa-search me-2"></i> Search Jobs
+                        </a>
+                        <a href="#how-it-works" class="btn btn-neon btn-neon-secondary px-4 py-3">
+                            <i class="fas fa-play-circle me-2"></i> How It Works
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="position-relative">
+                        <img src="./src/images/hero.png" alt="Hero Illustration" class="img-fluid rounded-4 glass-card" style="border: none;">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="stat-number">15,342</div>
+                        <p class="mb-0">Tech Jobs</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="stat-number">2,156</div>
+                        <p class="mb-0">Companies</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="stat-number">98%</div>
+                        <p class="mb-0">Match Rate</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 stat-item">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="stat-number">24h</div>
+                        <p class="mb-0">Avg. Response</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3 neon-text">Find Your Perfect <span class="neon-secondary">Match</span></h2>
+                    <p class="lead">Our AI-powered search analyzes thousands of jobs to find the ones that fit your skills and preferences.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="glass-card p-4 p-lg-5">
+                        <div class="row g-3">
+                            <div class="col-md-5">
+                                <input type="text" class="form-control search-input" placeholder="Job title, keywords, or company">
+                            </div>
+                            <div class="col-md-5">
+                                <input type="text" class="form-control search-input" placeholder="Location or remote">
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-neon w-100 py-3">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="job-tag">Frontend</span>
+                                <span class="job-tag">Backend</span>
+                                <span class="job-tag">Full Stack</span>
+                                <span class="job-tag">DevOps</span>
+                                <span class="job-tag">UI/UX</span>
+                                <span class="job-tag">Data Science</span>
+                                <span class="job-tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section id="jobs" class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 neon-text">Featured <span class="neon-secondary">Tech Jobs</span></h2>
+                    <p class="lead">Hand-picked opportunities from top tech companies worldwide.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Job Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card job-card h-100 p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h4 class="neon-accent">Senior React Developer</h4>
+                                <p class="mb-1">TechNova Inc.</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-dark text-primary">Remote</span>
+                            </div>
+                        </div>
+                        <p class="text-light mb-4">Join our frontend team to build cutting-edge web applications using React, TypeScript, and modern tooling.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="job-tag">React</span>
+                            <span class="job-tag">TypeScript</span>
+                            <span class="job-tag">Redux</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="neon-accent">$120K - $150K</span>
+                            <a href="#" class="btn btn-neon btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Job Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card job-card h-100 p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h4 class="neon-accent">DevOps Engineer</h4>
+                                <p class="mb-1">CloudFusion</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-dark text-primary">Hybrid</span>
+                            </div>
+                        </div>
+                        <p class="text-light mb-4">Design and implement CI/CD pipelines, manage cloud infrastructure, and optimize deployment processes.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="job-tag">AWS</span>
+                            <span class="job-tag">Kubernetes</span>
+                            <span class="job-tag">Terraform</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="neon-accent">$130K - $160K</span>
+                            <a href="#" class="btn btn-neon btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Job Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card job-card h-100 p-4">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <div>
+                                <h4 class="neon-accent">AI Research Scientist</h4>
+                                <p class="mb-1">DeepMind Labs</p>
+                            </div>
+                            <div class="text-end">
+                                <span class="badge bg-dark text-primary">On-site</span>
+                            </div>
+                        </div>
+                        <p class="text-light mb-4">Research and develop novel machine learning algorithms for natural language processing applications.</p>
+                        <div class="d-flex flex-wrap gap-2 mb-4">
+                            <span class="job-tag">Python</span>
+                            <span class="job-tag">TensorFlow</span>
+                            <span class="job-tag">NLP</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="neon-accent">$180K - $220K</span>
+                            <a href="#" class="btn btn-neon btn-sm">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-neon px-5 py-3">View All Jobs <i class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5 my-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold mb-3 neon-text">How <span class="neon-secondary">NeonJobs</span> Works</h2>
+                    <p class="lead">Our platform uses advanced algorithms to match you with the best opportunities in tech.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="mb-4 neon-accent" style="font-size: 3rem;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h4 class="mb-3">Create Profile</h4>
+                        <p>Build your professional profile with skills, experience, and preferences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="mb-4 neon-accent" style="font-size: 3rem;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4 class="mb-3">AI Matching</h4>
+                        <p>Our algorithm analyzes thousands of jobs to find your perfect matches.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="mb-4 neon-accent" style="font-size: 3rem;">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h4 class="mb-3">Get Alerts</h4>
+                        <p>Receive personalized job recommendations based on your profile.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card text-center p-4 h-100">
+                        <div class="mb-4 neon-accent" style="font-size: 3rem;">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="mb-3">Apply & Grow</h4>
+                        <p>Apply directly through our platform and accelerate your career.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="glass-card p-5 text-center">
+                <h2 class="display-5 fw-bold mb-4 neon-text">Ready to <span class="neon-secondary">Transform</span> Your Career?</h2>
+                <p class="lead mb-5">Join thousands of tech professionals who found their dream jobs through NeonJobs.</p>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <a href="#" class="btn btn-neon px-5 py-3">Sign Up For Free</a>
+                    <a href="#" class="btn btn-neon btn-neon-secondary px-5 py-3">Post a Job</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="neon-text mb-4">
+                        <i class="fas fa-bolt me-2"></i>NeonJobs
+                    </h3>
+                    <p>The futuristic job portal connecting tech talent with innovative companies worldwide.</p>
+                    <div class="mt-4">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="neon-accent mb-4">For Candidates</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light">Browse Jobs</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Candidate Profile</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Job Alerts</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="neon-accent mb-4">For Employers</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light">Post a Job</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Browse Candidates</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Pricing Plans</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Recruitment Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="neon-accent mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="neon-accent mb-4">Legal</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-light">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-5" style="border-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-light">© 2025 NeonJobs. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0 text-light">Made with <i class="fas fa-heart text-danger"></i> for tech professionals</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
